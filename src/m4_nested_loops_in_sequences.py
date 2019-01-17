@@ -3,8 +3,8 @@ This project demonstrates NESTED LOOPS (i.e., loops within loops)
 in the context of SEQUENCES OF SUB-SEQUENCES.
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Tyrique Jackson
+"""  # DOEN: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -128,7 +128,10 @@ def multiply_numbers(sequence_of_lists):
     #             to loop through it in the INNER loop.
     #        -- See   m2e_nested_loops_in_sequences   as needed.
     # ------------------------------------------------------------------
-
+    for j in range(len(sequence_of_lists)):
+        sublist = sequence_of_lists[j]
+        for k in range(len(sublist)):
+            sublist[k] = sublist[k] * (j + 1)
 
 def run_test_sum_numbers():
     """ Tests the    sum_numbers    function. """
@@ -154,7 +157,6 @@ def run_test_sum_numbers():
 
     # TO DO 3 (continued): Add your ADDITIONAL test(s) here:
 
-
 def sum_numbers(seq_seq):
     """
     Returns the sum of the numbers in the given sequence
@@ -169,7 +171,10 @@ def sum_numbers(seq_seq):
     # TODO: 4. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     # ------------------------------------------------------------------
-
+    for j in range(len(seq_seq)):
+        sublist = seq_seq[j]
+        for k in range(len(sublist)):
+            sublist[k] = sublist[k] + 
 
 def run_test_print_characters():
     """ Tests the    print_characters    function. """
